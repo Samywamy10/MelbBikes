@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		221B9807221E1D99000F3C36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B9806221E1D99000F3C36 /* AppDelegate.swift */; };
-		221B9809221E1D99000F3C36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B9808221E1D99000F3C36 /* ViewController.swift */; };
-		221B980C221E1D99000F3C36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221B980A221E1D99000F3C36 /* Main.storyboard */; };
-		221B980F221E1D99000F3C36 /* MelbBikes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 221B980D221E1D99000F3C36 /* MelbBikes.xcdatamodeld */; };
 		221B9811221E1D9A000F3C36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221B9810221E1D9A000F3C36 /* Assets.xcassets */; };
 		221B9814221E1D9A000F3C36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221B9812221E1D9A000F3C36 /* LaunchScreen.storyboard */; };
 		221B981F221E1D9B000F3C36 /* MelbBikesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B981E221E1D9B000F3C36 /* MelbBikesTests.swift */; };
 		221B982A221E1D9B000F3C36 /* MelbBikesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B9829221E1D9B000F3C36 /* MelbBikesUITests.swift */; };
+		221B9838221E221A000F3C36 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B9837221E221A000F3C36 /* HomeCollectionViewController.swift */; };
+		221B983A221E237B000F3C36 /* BikeLocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B9839221E237B000F3C36 /* BikeLocationCollectionViewCell.swift */; };
+		221B983C221E2BCF000F3C36 /* UIViewExtensionMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B983B221E2BCF000F3C36 /* UIViewExtensionMethods.swift */; };
+		221B983E221E2BF5000F3C36 /* UIColorExtensionMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B983D221E2BF5000F3C36 /* UIColorExtensionMethods.swift */; };
+		221B9840221E33A1000F3C36 /* BikeLocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B983F221E33A1000F3C36 /* BikeLocationDetailViewController.swift */; };
+		221B9845221E3401000F3C36 /* BikeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B9844221E3401000F3C36 /* BikeLocation.swift */; };
+		221B9847221E3AF3000F3C36 /* BikeShareLocationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B9846221E3AF3000F3C36 /* BikeShareLocationsService.swift */; };
+		221B984A221E48A4000F3C36 /* BikeShareLocations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 221B9848221E48A4000F3C36 /* BikeShareLocations.xcdatamodeld */; };
+		221B984C221E4C81000F3C36 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B984B221E4C81000F3C36 /* CoreDataStack.swift */; };
+		221B984E221E4CBE000F3C36 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B984D221E4CBE000F3C36 /* DataProvider.swift */; };
+		221B9850221EB71B000F3C36 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B984F221EB71B000F3C36 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +45,6 @@
 /* Begin PBXFileReference section */
 		221B9803221E1D99000F3C36 /* MelbBikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelbBikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		221B9806221E1D99000F3C36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		221B9808221E1D99000F3C36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		221B980B221E1D99000F3C36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		221B980E221E1D99000F3C36 /* MelbBikes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MelbBikes.xcdatamodel; sourceTree = "<group>"; };
 		221B9810221E1D9A000F3C36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		221B9813221E1D9A000F3C36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		221B9815221E1D9B000F3C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,17 @@
 		221B9825221E1D9B000F3C36 /* MelbBikesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelbBikesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221B9829221E1D9B000F3C36 /* MelbBikesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelbBikesUITests.swift; sourceTree = "<group>"; };
 		221B982B221E1D9B000F3C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		221B9837221E221A000F3C36 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		221B9839221E237B000F3C36 /* BikeLocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeLocationCollectionViewCell.swift; sourceTree = "<group>"; };
+		221B983B221E2BCF000F3C36 /* UIViewExtensionMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionMethods.swift; sourceTree = "<group>"; };
+		221B983D221E2BF5000F3C36 /* UIColorExtensionMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionMethods.swift; sourceTree = "<group>"; };
+		221B983F221E33A1000F3C36 /* BikeLocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeLocationDetailViewController.swift; sourceTree = "<group>"; };
+		221B9844221E3401000F3C36 /* BikeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeLocation.swift; sourceTree = "<group>"; };
+		221B9846221E3AF3000F3C36 /* BikeShareLocationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeShareLocationsService.swift; sourceTree = "<group>"; };
+		221B9849221E48A4000F3C36 /* BikeShareLocations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BikeShareLocations.xcdatamodel; sourceTree = "<group>"; };
+		221B984B221E4C81000F3C36 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		221B984D221E4CBE000F3C36 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		221B984F221EB71B000F3C36 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +116,20 @@
 			isa = PBXGroup;
 			children = (
 				221B9806221E1D99000F3C36 /* AppDelegate.swift */,
-				221B9808221E1D99000F3C36 /* ViewController.swift */,
-				221B980A221E1D99000F3C36 /* Main.storyboard */,
+				221B9837221E221A000F3C36 /* HomeCollectionViewController.swift */,
+				221B983F221E33A1000F3C36 /* BikeLocationDetailViewController.swift */,
+				221B9839221E237B000F3C36 /* BikeLocationCollectionViewCell.swift */,
+				221B983B221E2BCF000F3C36 /* UIViewExtensionMethods.swift */,
 				221B9810221E1D9A000F3C36 /* Assets.xcassets */,
 				221B9812221E1D9A000F3C36 /* LaunchScreen.storyboard */,
 				221B9815221E1D9B000F3C36 /* Info.plist */,
-				221B980D221E1D99000F3C36 /* MelbBikes.xcdatamodeld */,
+				221B983D221E2BF5000F3C36 /* UIColorExtensionMethods.swift */,
+				221B9844221E3401000F3C36 /* BikeLocation.swift */,
+				221B9846221E3AF3000F3C36 /* BikeShareLocationsService.swift */,
+				221B9848221E48A4000F3C36 /* BikeShareLocations.xcdatamodeld */,
+				221B984B221E4C81000F3C36 /* CoreDataStack.swift */,
+				221B984D221E4CBE000F3C36 /* DataProvider.swift */,
+				221B984F221EB71B000F3C36 /* MapViewController.swift */,
 			);
 			path = MelbBikes;
 			sourceTree = "<group>";
@@ -234,7 +258,6 @@
 			files = (
 				221B9814221E1D9A000F3C36 /* LaunchScreen.storyboard in Resources */,
 				221B9811221E1D9A000F3C36 /* Assets.xcassets in Resources */,
-				221B980C221E1D99000F3C36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +282,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221B9809221E1D99000F3C36 /* ViewController.swift in Sources */,
-				221B980F221E1D99000F3C36 /* MelbBikes.xcdatamodeld in Sources */,
+				221B9840221E33A1000F3C36 /* BikeLocationDetailViewController.swift in Sources */,
+				221B984A221E48A4000F3C36 /* BikeShareLocations.xcdatamodeld in Sources */,
+				221B9845221E3401000F3C36 /* BikeLocation.swift in Sources */,
+				221B9838221E221A000F3C36 /* HomeCollectionViewController.swift in Sources */,
+				221B983C221E2BCF000F3C36 /* UIViewExtensionMethods.swift in Sources */,
+				221B9847221E3AF3000F3C36 /* BikeShareLocationsService.swift in Sources */,
+				221B984E221E4CBE000F3C36 /* DataProvider.swift in Sources */,
+				221B9850221EB71B000F3C36 /* MapViewController.swift in Sources */,
+				221B984C221E4C81000F3C36 /* CoreDataStack.swift in Sources */,
+				221B983E221E2BF5000F3C36 /* UIColorExtensionMethods.swift in Sources */,
+				221B983A221E237B000F3C36 /* BikeLocationCollectionViewCell.swift in Sources */,
 				221B9807221E1D99000F3C36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +329,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		221B980A221E1D99000F3C36 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				221B980B221E1D99000F3C36 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		221B9812221E1D9A000F3C36 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -592,13 +616,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		221B980D221E1D99000F3C36 /* MelbBikes.xcdatamodeld */ = {
+		221B9848221E48A4000F3C36 /* BikeShareLocations.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				221B980E221E1D99000F3C36 /* MelbBikes.xcdatamodel */,
+				221B9849221E48A4000F3C36 /* BikeShareLocations.xcdatamodel */,
 			);
-			currentVersion = 221B980E221E1D99000F3C36 /* MelbBikes.xcdatamodel */;
-			path = MelbBikes.xcdatamodeld;
+			currentVersion = 221B9849221E48A4000F3C36 /* BikeShareLocations.xcdatamodel */;
+			path = BikeShareLocations.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
